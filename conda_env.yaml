@@ -1,0 +1,8 @@
+name: european-soccer-player-rating
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+    - -r requirements.txt
