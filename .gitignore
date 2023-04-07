@@ -149,3 +149,4 @@ install/
 plots/
 logs/
 .DS_Store
+notebook/
