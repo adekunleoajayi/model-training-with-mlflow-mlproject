@@ -9,6 +9,8 @@ source venv/bib/activate
 python -m pip install --upgrade pip
 pip install -U setuptools
 pip install mlflow
+pip install virtualenv
+pip install kubernetes
 ```
 ## 1- Run with local env (optional)
 Test the setup with your local environment.
@@ -66,4 +68,9 @@ mlflow run . \
     -P l1_ratio=0.5 \
     --experiment-name European-Soccer-Player \
     --run-name efficient-net-european-soccer-player
+```
+
+## 6 - Run project on Kubernetes
+```bash
+mlflow run . --build-image --backend kubernetes --backend-config kubernetes/kubernetes_config.json
 ```
