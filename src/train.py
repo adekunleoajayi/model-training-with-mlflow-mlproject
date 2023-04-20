@@ -50,6 +50,10 @@ if __name__ == "__main__":
     alpha = float(args.alpha)
     l1_ratio = float(args.l1_ratio)
 
+    mlflow.set_tracking_uri("")
+    # this is just a hack to ensure the pipeline runs on kubernetes.
+    # there is currently a bug and without it the pipeline will fail.
+
     xtrain, xtest, ytrain, ytest = datasets.get_train_test_datasets()
 
     train_model(alpha, l1_ratio, xtrain, xtest, ytrain, ytest)
