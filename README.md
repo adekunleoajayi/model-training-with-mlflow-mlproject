@@ -5,7 +5,7 @@ This is a tutorial on training a machine learning model using MLFLOW MLproject c
 ## 0 - Setup environment
 ```bash
 python3 -m venv venv
-source venv/bib/activate
+source venv/bin/activate
 python -m pip install --upgrade pip
 pip install -U setuptools
 pip install mlflow
