@@ -1,0 +1,5 @@
+{
+  "kube-context": "minikube",
+  "kube-job-template-path": "kubernetes/kubernetes_job.yaml",
+  "repository-uri": "username/european-soccer-player-rating"
+}
