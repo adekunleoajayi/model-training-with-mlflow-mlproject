@@ -50,7 +50,7 @@ if __name__ == "__main__":
     alpha = float(args.alpha)
     l1_ratio = float(args.l1_ratio)
 
-    mlflow.set_tracking_uri("")
+    # mlflow.set_tracking_uri("")
     # this is just a hack to ensure the pipeline runs on kubernetes.
     # there is currently a bug and without it the pipeline will fail.
 
